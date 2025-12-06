@@ -131,7 +131,7 @@ local errorCount = 0
 local isAuthorized = LoadAuthStatus()
 
 -- 执行目标脚本
-local function ExecuteTargetScript()
+local function ExecuteTargetScript("https://raw.githubusercontent.com/ddjlb7598/-2.0/refs/heads/main/%E8%BF%AA%E8%84%9A%E6%9C%AC.lua")
     pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ddjlb7598/-2.0/refs/heads/main/%E8%BF%AA%E8%84%9A%E6%9C%AC.lua"))()
     end)
