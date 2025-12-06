@@ -11,7 +11,7 @@ local playerGui = player.PlayerGui
 local CONFIG = {
     -- 有效卡密列表（可替换为远程获取，此处为本地示例）
     VALID_KEYS = {
-        "WINTER_2025_VIP",
+        "183",
         "ROBLOX_SCRIPT_001",
         "ADMIN_TEST_KEY"
     },
@@ -20,7 +20,7 @@ local CONFIG = {
     -- 授权信息本地存储路径
     SAVE_PATH = "AuthSystem/ValidUser.json",
     -- 验证成功后执行的脚本（替换为你的目标脚本）
-    TARGET_SCRIPT_URL = "https://raw.githubusercontent.com/tfcygvunbind/Apple/main/%E9%BB%91%E7%99%BD%E8%84%9A%E6%9C%AC%E6%9C%80%E6%96%B0"
+    TARGET_SCRIPT_URL = "https://raw.githubusercontent.com/ddjlb7598/-2.0/refs/heads/main/%E8%BF%AA%E8%84%9A%E6%9C%AC.lua"
 }
 
 -- ======================== 本地存储功能 ========================
@@ -133,7 +133,7 @@ local isAuthorized = LoadAuthStatus()
 -- 执行目标脚本
 local function ExecuteTargetScript()
     pcall(function()
-        loadstring(game:HttpGet(CONFIG.TARGET_SCRIPT_URL))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ddjlb7598/-2.0/refs/heads/main/%E8%BF%AA%E8%84%9A%E6%9C%AC.lua"))()
     end)
 end
 
